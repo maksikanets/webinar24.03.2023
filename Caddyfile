@@ -3,5 +3,5 @@
     root * /usr/share/caddy
     file_server
     encode gzip
-    try_files {maksikanets} {webinar24.03.2023}/ /index.html
+    try_files {path} {path}/ /index.html
 }
