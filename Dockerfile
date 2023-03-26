@@ -2,12 +2,11 @@
 
 FROM caddy:2.0.0-alpine
 
+#copy all files from the current directory to the /usr/share/caddy directory in the container
+COPY . /usr/share/caddy
+
 # workdir
 WORKDIR /usr/share/caddy
-
-# copy all files
-
-COPY . .
 
 # expose port 80
 EXPOSE 80
