@@ -1,11 +1,14 @@
+env:
+ACTIONS_STEP_DEBUG: true
+ACTIONS_RUNNER_DEBUG: true  
 # cicd job build docker image and push to ghcr.io
 name: cicd
 
 on:
   push:
-    branches: [main]
+    branches: [master ]
   pull_request:
-    branches: [main]
+    branches: [master ]
 
 jobs:
 
